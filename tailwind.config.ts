@@ -8,9 +8,13 @@ export default {
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+      color:{
+        secondery:"#DB4444",
+      fontFamily:{
+        Montserrat:['Montserrat']
+      
+        }
+      
       },
     },
   },
