@@ -4,110 +4,95 @@ import Image from 'next/image';
 
 const Footer = () => {
   return (
-    
-    <footer className=" text-black  ">
-      <div className="container mx-auto flex justify-between items-center  py-10 bg-[#FAFAFA]">
-        {/* Left Side */}
-        <div className="text-2xl font-montserrat">
+    <footer className="text-black">
+      {/* Top Section */}
+      <div className="container mx-auto flex justify-between items-center py-10 bg-[#FAFAFA] px-6 md:px-12">
+        {/* Brand Name */}
+        <div className="text-2xl font-bold font-[Montserrat] tracking-wide ">
           Bandage
         </div>
 
-        {/* Right Side - Social Media Icons */}
-        <div className="flex space-x-4">
-          <FaFacebook className="text-blue-500 text-2xl hover:text-blue-700" />
-          <FaInstagram className="text-blue-500 text-2xl hover:text-blue-700" />
-          <FaTwitter className="text-blue-500 text-2xl hover:text-blue-700" />
+        {/* Social Media Icons */}
+        <div className="flex space-x-4 text-[#23A6F0]">
+          <FaFacebook className=" text-2xl hover:text-blue-700 cursor-pointer" />
+          <FaInstagram className=" text-2xl hover:text-blue-700 cursor-pointer" />
+          <FaTwitter className=" text-2xl hover:text-blue-700 cursor-pointer" />
+          <FaLinkedin className=" text-2xl hover:text-blue-700 cursor-pointer" />
         </div>
       </div>
-          
 
-        {/* Footer Links Section */}
-       
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-5 gap-6 ">
-        {/* Column 1: Company Info */}
+      {/* Middle Section: Footer Links */}
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-5 gap-8 px-6 md:px-12 py-10">
+        {/* Company Info */}
         <div>
           <h3 className="font-bold font-[Montserrat] text-lg mb-4">Company Info</h3>
-          <ul className="space-y-2">
+          <ul className="space-y-2 text-sm text-gray-600">
             <li>About Us</li>
-            <li>Carrier</li>
+            <li>Careers</li>
             <li>We are hiring</li>
             <li>Blog</li>
           </ul>
         </div>
 
-        {/* Column 2: Legal */}
+        {/* Legal */}
         <div>
-          <h3 className="font-bold text-lg mb-4">Legal</h3>
-          <ul className="space-y-2">
-            <li>About Us</li>
-            <li>We are hiring</li>
+          <h3 className="font-bold font-[Montserrat] text-lg mb-4">Legal</h3>
+          <ul className="space-y-2 text-sm text-gray-600">
+            <li>Privacy Policy</li>
+            <li>Terms of Service</li>
             <li>Blog</li>
           </ul>
         </div>
 
-        {/* Column 3: Features */}
+        {/* Features */}
         <div>
-          <h3 className="font-bold text-lg mb-4">Features</h3>
-          <ul className="space-y-2">
+          <h3 className="font-bold font-[Montserrat] text-lg mb-4">Features</h3>
+          <ul className="space-y-2 text-sm text-gray-600">
             <li>Business Marketing</li>
-            <li>User Analytic</li>
+            <li>User Analytics</li>
             <li>Live Chat</li>
             <li>Unlimited Support</li>
           </ul>
         </div>
 
-        {/* Column 4: Resources */}
+        {/* Resources */}
         <div>
-          <h3 className="font-bold text-lg mb-4">Resources</h3>
-          <ul className="space-y-2">
-            <li>IOS & Android</li>
+          <h3 className="font-bold font-[Montserrat] text-lg mb-4">Resources</h3>
+          <ul className="space-y-2 text-sm text-gray-600">
+            <li>iOS & Android</li>
             <li>Watch a Demo</li>
             <li>Customers</li>
             <li>API</li>
           </ul>
         </div>
-        {/* Get In Touch Section */}
-    
-        <div className="container mx-auto grid md:grid-cols-2 items-center gap-6">
-          <div>
-            <h3 className="font-bold text-lg mb-4">Get in touch</h3>
-            <form className="flex w-3/4 mx-auto">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="w-[321px] h-[58px] px-4 py-2 rounded-l-md text-sm focus:outline-none font-[Montserrat] text-[12px] font-[400] leading-[28px] tracking-[0.2px] text-left"
-              />
-              <button className="bg-blue-500 px-2 py-2 rounded-r-md text-white text-sm font-bold hover:bg-blue-700">
-                Subscribe
-              </button>
-            </form>
-            <br />
-            <h5 className="font-[Montserrat] text-[12px] font-[400] leading-[28px] tracking-[0.2px] text-left">
-              Lore imp sum dolor Amit
-            </h5>
 
-          </div>
-          
+        {/* Get in Touch Section */}
+        <div>
+          <h3 className="font-bold font-[Montserrat] text-lg mb-4">Get in Touch</h3>
+          <form className="flex items-center space-x-2">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              className="w-full md:w-[200px] lg:w-[300px] h-[48px] px-2 rounded-l-md border border-gray-300 text-sm focus:outline-none"
+            />
+            <button className="bg-[#23A6F0] px-4 py-2 rounded-r-md text-white text-sm font-bold hover:bg-blue-700">
+              Subscribe
+            </button>
+          </form>
+          <p className="mt-4 text-sm text-gray-600 font-[Montserrat]">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
         </div>
-        <div className="bg-[#FAFAFA] py-14">
-  <h1 className="text-[#737373] text-center font-[Montserrat] text-[14px] font-bold leading-[24px] tracking-[0.2px]">
-    Made With Love By Finland All Right Reserved
-  </h1>
-</div>
-
-
-
       </div>
 
-        
-
-    
+      {/* Bottom Section */}
+      <div className="bg-[#FAFAFA] py-6">
+        <p className="text-center text-sm text-gray-500 font-[Montserrat]">
+          Made with love by Finland. All Rights Reserved.
+        </p>
+      </div>
     </footer>
   );
 };
 
 export default Footer;
-
-  
-    
-

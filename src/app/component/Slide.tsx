@@ -1,14 +1,15 @@
 import React from 'react';
+import Link from 'next/link';
 
 const Slide = () => {
   return (
     <div>
-      <div
-        className="relative bg-cover bg-center h-screen flex items-center"
-        style={{
-          backgroundImage: "url('/Images/Hero.svg')", // Ensure the correct path
-        }}
-      >
+     <div
+  className="relative bg-cover bg-center h-screen flex items-center"
+  style={{
+    backgroundImage: "url('/Images/Hero.svg')", // Ensure the correct path
+  }}
+>
         <div className="container mx-auto text-white p-4">
           <div className="md:w-1/2 text-left bg-opacity-75 p-6 rounded-md">
           <h5 className="font-[Montserrat] text-[16px] font-bold leading-[24px] tracking-[0.1px] text-left  ">
@@ -22,9 +23,13 @@ const Slide = () => {
             We know how large objects will act,<br/> 
             but things on a small scale.
             </h4>
+           
             <button className="bg-green-500 text-white px-8 py-3 rounded-md text-lg hover:bg-green-600 transition duration-300 ease-in-out">
+            <Link href="/productlist">
               Shop Now
+              </Link>
             </button>
+            
           </div>
         </div>
       </div>

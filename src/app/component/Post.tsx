@@ -1,10 +1,9 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { LuRectangleVertical } from "react-icons/lu";
 
 import Image from 'next/image';
-import { useRouter } from 'next/navigation'; // for page redirection
+
 
 const post = () => {
   

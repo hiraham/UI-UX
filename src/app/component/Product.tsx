@@ -4,9 +4,7 @@ import Image from 'next/image';
 const Product = () => {
   const products = [
     {
-      src: "/Images/product-cover-5.svg",
-      alt: "Graphic Design",
-      name: "Graphic Design",
+      src: "/Images ign",
       description: "English Department",
       previousPrice: "$16.48",
       newPrice: "$6.48",
@@ -40,7 +38,7 @@ const Product = () => {
       colors: ["bg-blue-500", "bg-green-600", "bg-orange-500", "bg-gray-800"],
     },
     {
-      src: "/Images/product-cover-5 (7) - Copy.svg",
+      src: "/Images/product-cover-5 (6).svg",
       alt: "Graphic Design",
       name: "Product 5",
       description: "Geography Department",
@@ -93,7 +91,7 @@ const Product = () => {
       </div>
 
       {/* Products Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mt-8">
+      <div className="grid grid-cols-1 sm:grid-cols-4 md:grid-cols-4 gap-8 mt-8">
         {products.map((item, index) => (
           <div
             key={index}
@@ -101,9 +99,9 @@ const Product = () => {
           >
             {/* Product Image */}
             <div className="flex justify-center items-center mb-4">
-              <Image
-                src={item.src}
-                alt={item.alt}
+            <Image
+                src={item.src || "/images/placeholder.png"} // Fallback for missing images
+                alt={item.alt || "Product Image"}
                 width={200}
                 height={250}
                 className="object-contain"
